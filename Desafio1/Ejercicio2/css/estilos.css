@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  font-size: 2rem;
+  padding: 2rem 1.5rem;
+  color: #0a2ff1;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  padding: 1rem 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem;
+  width: 30%;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+}
+
+article img {
+  width: 100%;
+}
+
+article .text-card {
+    position: absolute;
+    text-align: center;
+    padding: 0rem 0rem 0.5rem 0rem;
+}
+
+article h2 {
+  display: flex;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+article p {
+  font-weight: 400;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Full-size view */
+@media screen and (min-width: 993px) {
+  /* Your CSS rules for full-size view go here */
+}
+
+/* Max width 992px */
+@media screen and (max-width: 992px) {
+  /* Your CSS rules for max width 992px go here */
+  header {
+    padding: 2rem 6rem 1rem;
+  }
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  article {
+    width: 40.33%;
+  }
+
+  article h2 {
+    font-size: 1.7rem;
+  }
+  
+  article p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Max width 768px */
+@media screen and (max-width: 768px) {
+  /* Your CSS rules for max width 768px go here */
+  header {
+    font-size: 2rem;
+    padding: 2rem 10rem 0rem 5.5rem;
+  }
+  article {
+    width: 80%;
+  }
+}

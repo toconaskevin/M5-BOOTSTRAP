@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+header {
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+  color: #3957f1;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  padding: 2rem 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 25%;
+  box-shadow: 3px 3px 8px black;
+}
+
+article img {
+  width: 100%;
+}
+
+article h2 {
+  display: flex;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  color: #15163d;
+  font-weight: 400;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Full-size view */
+@media screen and (min-width: 993px) {
+  /* Your CSS rules for full-size view go here */
+}
+
+/* Max width 992px */
+@media screen and (max-width: 992px) {
+  /* Your CSS rules for max width 992px go here */
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  article {
+    width: 40.33%;
+  }
+}
+
+/* Max width 768px */
+@media screen and (max-width: 768px) {
+  /* Your CSS rules for max width 768px go here */
+  header {
+    font-size: 1.5rem;
+    padding: 2rem 2rem 0rem;
+  }
+  article {
+    width: 80%;
+  }
+}
